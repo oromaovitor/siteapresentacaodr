@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Rafael Moretti | Ortopedista de Joelho e Esporte no Rio de Janeiro</title>
+<meta name="description" content="Ortopedista especialista em joelho e medicina esportiva no Rio de Janeiro. Lesões de menisco, LCA, artrose e retorno seguro ao esporte. Agende pelo WhatsApp.">
+<meta property="og:title" content="Dr. Rafael Moretti | Ortopedia · Joelho e Esporte">
+<meta property="og:description" content="Volte a se mover sem medo da dor. Agende sua avaliação pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/capa-compartilhamento.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#121518">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121518'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2337a3ad'%3ERM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121518; --ink-2:#1a1f23; --ink-3:#242b30;
+  --petrol:#1f6670; --petrol-2:#37a3ad; --sand:#d8c6a4; --sand-2:#efe6d6;
+  --paper:#f4f1ec; --text:#e9ecee; --muted:#9aa4aa; --text-dark:#1b2024; --muted-dark:#5b656b;
+  --line:rgba(255,255,255,.1); --line-dark:rgba(18,21,24,.12);
+  --r:14px;
+  --ease-out:cubic-bezier(.23,1,.32,1); --ease-move:cubic-bezier(.77,0,.175,1);
+  --f-title:'Barlow Condensed',system-ui,sans-serif; --f-body:'Manrope',system-ui,sans-serif;
+  --s1:8px; --s2:16px; --s3:24px; --s4:40px; --s5:64px; --s6:104px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--f-body);background:var(--ink);color:var(--text);line-height:1.6;font-size:16px;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.skip{position:absolute;left:-999px;top:8px;background:var(--sand);color:var(--ink);padding:8px 14px;border-radius:8px;z-index:200}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--petrol-2);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+
+/* tipografia */
+.eyebrow{font-family:var(--f-body);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--petrol-2);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;line-height:.98;letter-spacing:-.005em;text-transform:uppercase}
+h1{font-size:clamp(46px,8.4vw,108px)}
+h2{font-size:clamp(36px,5.4vw,68px)}
+h3{font-size:clamp(24px,2.6vw,32px);line-height:1.05}
+.hl{color:var(--petrol-2)}
+.lead{font-size:clamp(16px,1.6vw,19px);color:var(--muted);max-width:52ch}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-weight:700;font-size:15px;transition:transform .18s var(--ease-out),background .25s,color .25s,border-color .25s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:var(--petrol-2);color:var(--ink)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--text)}
+@media (hover:hover){.btn-wa:hover{background:#4bb9c2}.btn-ghost:hover{border-color:var(--petrol-2);color:var(--petrol-2)}}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* barra conceito + topo */
+.concept-bar{background:var(--sand);color:var(--ink);font-size:12.5px;text-align:center;padding:7px 16px;font-weight:600;line-height:1.4}
+.concept-bar a{text-decoration:underline;text-underline-offset:2px}
+header.top{position:sticky;top:0;z-index:50;background:rgba(18,21,24,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:40px;height:40px;border-radius:10px;background:var(--ink-3);display:grid;place-items:center;font-family:var(--f-title);font-weight:700;font-size:18px;color:var(--petrol-2);border:1px solid var(--line)}
+.brand b{display:block;font-family:var(--f-title);font-size:20px;letter-spacing:.02em;text-transform:uppercase;line-height:1}
+.brand small{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:3px}
+nav.menu{display:flex;gap:28px;font-size:14px;font-weight:600;color:var(--muted)}
+@media (hover:hover){nav.menu a:hover{color:var(--text)}}
+.top .btn{min-height:44px;padding:0 18px;font-size:14px}
+@media (max-width:900px){nav.menu{display:none}}
+@media (max-width:420px){.top .btn span{display:none}.top .btn{width:44px;padding:0}}
+
+/* HERO */
+.hero{position:relative;padding:var(--s5) 0 var(--s6);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(60% 50% at 78% 40%,rgba(55,163,173,.18),transparent 70%),
+  linear-gradient(180deg,transparent 60%,rgba(0,0,0,.25));pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s4);align-items:center;position:relative}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:block;transform:translateY(105%);transition:transform 1s var(--ease-out)}
+.hero.on h1 .ln>span{transform:none}
+.hero.on h1 .ln:nth-child(2)>span{transition-delay:.08s}
+.hero.on h1 .ln:nth-child(3)>span{transition-delay:.16s}
+.hero .lead{margin:var(--s3) 0 var(--s4)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:var(--s4);font-size:13px;color:var(--muted)}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta i{width:6px;height:6px;border-radius:50%;background:var(--petrol-2);display:block}
+.fade{opacity:0;transform:translateY(14px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+.hero.on .fade{opacity:1;transform:none}
+.hero.on .fade.d1{transition-delay:.35s}.hero.on .fade.d2{transition-delay:.45s}.hero.on .fade.d3{transition-delay:.55s}
+
+/* foto com profundidade */
+.portrait{position:relative;aspect-ratio:4/5;max-width:460px;margin-left:auto;width:100%}
+.portrait .glow{position:absolute;inset:8% -6% -4% -6%;background:radial-gradient(closest-side,rgba(55,163,173,.45),transparent);filter:blur(10px);translate:0 var(--py-glow,0)}
+.portrait .frame{position:absolute;inset:14% 0 0 0;border-radius:200px 200px var(--r) var(--r);background:linear-gradient(160deg,var(--ink-3),#0d1012);border:1px solid var(--line);translate:0 var(--py-frame,0)}
+.portrait .knee-bg{position:absolute;right:-8%;top:10%;width:62%;opacity:.12;translate:0 var(--py-bg,0)}
+.portrait .person{position:absolute;inset:-12% 0 0 0;border-radius:0 0 var(--r) var(--r);overflow:hidden}
+.portrait .person img{position:absolute;left:3%;width:94%;bottom:-40px;height:auto;translate:0 var(--py-person,0);filter:drop-shadow(0 24px 40px rgba(0,0,0,.5))}
+.portrait .shade{position:absolute;left:0;right:0;bottom:0;height:22%;border-radius:0 0 var(--r) var(--r);background:linear-gradient(transparent,rgba(13,16,18,.85));pointer-events:none}
+.portrait .person img{opacity:0;transform:translateY(30px) scale(.97);transition:opacity 1.1s var(--ease-out) .25s,transform 1.3s var(--ease-out) .25s}
+.hero.on .portrait .person img{opacity:1;transform:none}
+.ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:12px;color:var(--muted);font-size:13px;text-align:center;padding:0 10%}
+.ph svg{width:78%;opacity:.55}
+.ph em{font-style:normal;background:rgba(0,0,0,.35);padding:6px 12px;border-radius:999px;margin-bottom:22px}
+.portrait .tag{position:absolute;left:-4%;bottom:12%;background:var(--paper);color:var(--text-dark);border-radius:12px;padding:12px 16px;box-shadow:0 18px 40px rgba(0,0,0,.35);font-size:13px;line-height:1.35;translate:0 var(--py-tag,0)}
+.portrait .tag b{display:block;font-family:var(--f-title);font-size:20px;text-transform:uppercase;letter-spacing:.02em}
+@media (max-width:860px){
+  .hero{padding:52px 0 var(--s5)}
+  .hero-grid{grid-template-columns:1fr;gap:0}
+  .hero-grid>div:first-child{position:relative;z-index:3}
+  .portrait{order:-1;margin:0 auto -96px;max-width:300px;width:86%}
+  .portrait .shade{height:46%;background:linear-gradient(transparent,rgba(18,21,24,.92) 70%,var(--ink))}
+  .portrait .frame{border-bottom-left-radius:0;border-bottom-right-radius:0}
+  .portrait .tag{display:none}
+  .hero h1{margin-top:10px!important}
+  .hero .eyebrow{justify-content:flex-start}
+}
+@media (max-width:380px){.portrait{max-width:250px;margin-bottom:-84px}}
+
+/* JOELHO QUE SE MONTA */
+.knee{position:relative;height:340vh;background:var(--ink-2);border-block:1px solid var(--line)}
+.knee-sticky{position:sticky;top:68px;height:calc(100vh - 68px);height:calc(100svh - 68px);display:flex;align-items:center;overflow:hidden}
+.knee-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--s4);align-items:center;width:min(1180px,100% - 40px)}
+.knee-copy h2{margin:var(--s2) 0 var(--s3)}
+.stages{position:relative;min-height:150px}
+.stage{position:absolute;inset:0 0 auto 0;opacity:0;transform:translateY(12px);transition:opacity .45s var(--ease-out),transform .45s var(--ease-out)}
+.stage.on{opacity:1;transform:none}
+.stage b{font-family:var(--f-title);font-size:28px;text-transform:uppercase;letter-spacing:.02em;color:var(--sand);display:block;margin-bottom:6px}
+.stage p{color:var(--muted);max-width:44ch}
+.knee-progress{display:flex;gap:6px;margin-top:var(--s3)}
+.knee-progress i{height:3px;flex:1;max-width:48px;background:var(--line);border-radius:3px;overflow:hidden;position:relative}
+.knee-progress i::after{content:"";position:absolute;inset:0;background:var(--petrol-2);transform:scaleX(var(--p,0));transform-origin:left}
+.knee-svg{width:100%;max-height:74vh;max-height:74svh}
+.knee-svg path,.knee-svg line{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.bone{stroke:var(--sand-2);stroke-width:2.4}
+.soft{stroke:var(--petrol-2);stroke-width:3}
+.lig{stroke:#e0795b;stroke-width:3.4}
+.knee-svg .lbl{opacity:0;transition:opacity .4s var(--ease-out)}
+.knee-svg .lbl.on{opacity:1}
+.knee-svg .lbl text{fill:var(--text);font-family:var(--f-body);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.knee-svg .lbl line{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4}
+.knee-svg .lbl circle{fill:var(--petrol-2)}
+@media (max-width:860px){
+  .knee{height:230vh}
+  .knee-grid{grid-template-columns:1fr;gap:var(--s2)}
+  .knee-copy{order:2}
+  .knee-copy h2{font-size:34px;margin:10px 0 14px}
+  .knee-copy .eyebrow{display:none}
+  .knee-svg{max-height:46vh;max-height:46svh;margin:0 auto}
+  .stages{min-height:118px}
+  .stage b{font-size:24px}
+  .stage p{font-size:15px}
+}
+
+/* seções claras */
+.light{background:var(--paper);color:var(--text-dark)}
+.light .lead{color:var(--muted-dark)}
+.light .eyebrow{color:var(--petrol)}
+.light .hl{color:var(--petrol)}
+section.pad{padding:var(--s6) 0}
+@media (max-width:860px){section.pad{padding:var(--s5) 0}}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);align-items:end;margin-bottom:var(--s5)}
+.sec-head h2{margin-top:var(--s2)}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr;gap:var(--s2);margin-bottom:var(--s4)}}
+
+/* MAPA DO CORPO */
+.map-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:var(--s5);align-items:center}
+.body-wrap{position:relative;max-width:300px;margin:0 auto;width:100%}
+.body-svg{width:100%}
+.body-svg .sil *{fill:#ebe5da;stroke:#1f6670;stroke-opacity:.55;stroke-width:1.6;stroke-linejoin:round}
+.body-svg .sil-lines path{fill:none;stroke:#1f6670;stroke-opacity:.18;stroke-width:1.4;stroke-linecap:round}
+.spot{position:absolute;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;display:grid;place-items:center}
+.spot::before{content:"";position:absolute;inset:8px;border-radius:50%;background:rgba(31,102,112,.18);transition:transform .3s var(--ease-out),background .3s}
+.spot::after{content:"";width:14px;height:14px;border-radius:50%;background:var(--petrol);box-shadow:0 0 0 4px rgba(244,241,236,.9);position:relative;transition:transform .2s var(--ease-out)}
+.spot .pulse{position:absolute;inset:8px;border-radius:50%;border:2px solid var(--petrol);animation:pulse 2.2s var(--ease-out) infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+.spot.on::before{background:rgba(31,102,112,.32);transform:scale(1.25)}
+.spot.on::after{background:#e0795b}
+.spot:active::after{transform:scale(.85)}
+.map-hint{text-align:center;font-size:13px;color:var(--muted-dark);margin-top:var(--s2);display:flex;align-items:center;justify-content:center;gap:8px}
+.panel{background:#fff;border:1px solid var(--line-dark);border-radius:20px;padding:var(--s4);box-shadow:0 30px 60px -30px rgba(18,21,24,.25);min-height:380px;display:flex;flex-direction:column}
+.panel-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:var(--s3)}
+.panel-tabs button{min-height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line-dark);font-size:14px;font-weight:600;color:var(--muted-dark);transition:all .2s var(--ease-out)}
+.panel-tabs button[aria-selected="true"]{background:var(--text-dark);border-color:var(--text-dark);color:var(--paper)}
+.panel-body{flex:1}
+.panel-body.swap{animation:swap .45s var(--ease-out)}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.panel h3{margin-bottom:10px}
+.panel p{color:var(--muted-dark)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:var(--s3) 0}
+.chips span{font-size:13px;font-weight:600;background:var(--sand-2);padding:6px 12px;border-radius:8px;color:var(--text-dark)}
+.panel .btn-wa{background:var(--petrol);color:#fff;align-self:flex-start}
+@media (hover:hover){.panel .btn-wa:hover{background:#18535b}}
+@media (max-width:860px){
+  .map-grid{grid-template-columns:1fr;gap:var(--s3)}
+  .body-wrap{max-width:230px}
+  .panel{padding:var(--s3);min-height:0}
+  .panel .btn-wa{align-self:stretch;white-space:normal;text-align:center}
+}
+
+/* LINHA DO TEMPO */
+#recuperacao .sec-head{align-items:center}
+.tl-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:5/4;margin:0}
+.tl-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;transform:scale(1.08);transition:transform 1.6s var(--ease-out)}
+.tl-photo.in img{transform:none}
+.tl-photo figcaption{position:absolute;left:16px;bottom:16px;right:16px;font-size:13px;font-weight:600;color:var(--text);background:rgba(18,21,24,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:10px 14px;border-radius:10px;width:fit-content}
+.img-rv{clip-path:inset(14% 0 0 0 round var(--r));transition:clip-path 1.2s var(--ease-out)}
+.img-rv.in{clip-path:inset(0 0 0 0 round var(--r))}
+.timeline{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);margin-top:var(--s2)}
+.tl-track{position:absolute;left:0;right:0;top:27px;height:2px;background:var(--line)}
+.tl-track i{position:absolute;inset:0;background:var(--petrol-2);transform-origin:left;transform:scaleX(var(--tl,0))}
+.tl-step{position:relative;padding-top:72px}
+.tl-dot{position:absolute;top:8px;left:0;width:40px;height:40px;border-radius:50%;background:var(--ink);border:2px solid var(--line);display:grid;place-items:center;font-family:var(--f-title);font-weight:700;font-size:18px;color:var(--muted);transition:all .4s var(--ease-out)}
+.tl-step.on .tl-dot{border-color:var(--petrol-2);color:var(--ink);background:var(--petrol-2);box-shadow:0 0 0 6px rgba(55,163,173,.15)}
+.tl-step h3{font-size:26px;margin-bottom:8px;transition:color .4s}
+.tl-step p{color:var(--muted);font-size:15px}
+.tl-step:not(.on) h3{color:var(--muted)}
+@media (max-width:860px){
+  .timeline{grid-template-columns:1fr;gap:var(--s4);padding-left:58px}
+  .tl-track{left:19px;right:auto;top:8px;bottom:8px;width:2px;height:auto}
+  .tl-track i{transform-origin:top;transform:scaleY(var(--tl,0))}
+  .tl-step{padding-top:0}
+  .tl-dot{left:-58px;top:-4px}
+}
+
+/* TRATAMENTOS */
+.treat{border-top:1px solid var(--line-dark)}
+.t-row{display:grid;grid-template-columns:1.1fr 1.4fr auto;gap:var(--s4);align-items:center;padding:var(--s3) 0;border-bottom:1px solid var(--line-dark);position:relative}
+.t-row h3{font-size:clamp(24px,2.8vw,34px);transition:color .3s,transform .35s var(--ease-out)}
+.t-row p{color:var(--muted-dark);font-size:15px}
+.t-link{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--line-dark);display:grid;place-items:center;transition:all .25s var(--ease-out);flex:none}
+.t-link svg{width:20px;height:20px}
+@media (hover:hover){
+  .t-row:hover h3{color:var(--petrol);transform:translateX(6px)}
+  .t-row:hover .t-link{background:var(--petrol);border-color:var(--petrol);color:#fff}
+}
+.t-link:active{transform:scale(.94)}
+@media (max-width:760px){
+  .t-row{grid-template-columns:1fr auto;gap:8px 16px;padding:20px 0}
+  .t-row p{grid-column:1/2;grid-row:2}
+  .t-link{grid-column:2;grid-row:1/3;width:48px;height:48px}
+}
+
+/* MITO */
+.myth{background:var(--petrol);color:#fff;position:relative;overflow:hidden}
+.myth::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(255,255,255,.06)}
+.myth-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:center;position:relative;z-index:1}
+.myth .label{display:inline-block;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.14);margin-bottom:var(--s2)}
+.myth h2 s{text-decoration-thickness:4px;text-decoration-color:#e0795b;opacity:.75}
+.myth p{color:rgba(255,255,255,.82);font-size:17px}
+.myth p+p{margin-top:var(--s2)}
+@media (max-width:860px){.myth-grid{grid-template-columns:1fr;gap:var(--s3)}}
+
+/* SOBRE */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:var(--s5);align-items:center}
+.about-photo{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:linear-gradient(160deg,#dcd3c4,#c8bca8)}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform:scale(1.08);transition:transform 1.6s var(--ease-out)}
+.about-photo.in img{transform:none}
+.about-photo .ph{color:#6b6255}
+.about-photo .ph svg{opacity:.35}
+.about-photo .ph em{background:rgba(255,255,255,.6)}
+.quote{font-family:var(--f-title);font-weight:600;font-size:clamp(26px,2.9vw,36px);line-height:1.15;margin:var(--s3) 0;max-width:24ch}
+.quote::before{content:"“";color:var(--petrol);margin-right:4px}
+.creds{list-style:none;display:grid;gap:12px;margin-top:var(--s3)}
+.creds li{display:flex;gap:12px;align-items:flex-start;color:var(--muted-dark);font-size:15px}
+.creds li::before{content:"";width:8px;height:8px;margin-top:8px;border-radius:2px;background:var(--petrol);transform:rotate(45deg);flex:none}
+.reg{display:inline-flex;margin-top:var(--s3);font-size:13px;font-weight:700;color:var(--text-dark);background:var(--sand-2);padding:8px 14px;border-radius:8px}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:var(--s4)}.about-photo{max-width:420px;width:100%;aspect-ratio:1/1}}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-weight:700;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-9px;border-right:2px solid var(--petrol-2);border-bottom:2px solid var(--petrol-2);transform:rotate(45deg);transition:transform .3s var(--ease-out)}
+.faq details[open] summary::after{transform:rotate(-135deg);margin-top:-2px}
+.faq .ans{color:var(--muted);padding:0 0 22px;max-width:64ch}
+.faq details[open] .ans{animation:swap .4s var(--ease-out)}
+
+/* CTA final + rodapé */
+.final{text-align:center;position:relative;overflow:hidden}
+.final h2{font-size:clamp(42px,7vw,96px);max-width:14ch;margin:var(--s2) auto var(--s3)}
+.final .lead{margin:0 auto var(--s4)}
+.final .hero-ctas{justify-content:center}
+.final-info{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 32px;margin-top:var(--s5);color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:var(--s4) 0;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--text);font-weight:700}
+@media (hover:hover){footer a:hover{color:var(--petrol-2)}}
+.concept-note{max-width:60ch}
+
+/* botão flutuante + aviso conceito */
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .3s var(--ease-out),opacity .3s}
+.fab svg{width:28px;height:28px}
+.fab.hide{transform:scale(.6);opacity:0;pointer-events:none}
+.fab:active{transform:scale(.94)}
+.toast{position:fixed;left:50%;bottom:24px;z-index:100;width:min(440px,calc(100% - 32px));background:var(--paper);color:var(--text-dark);border-radius:16px;padding:18px 20px 18px;box-shadow:0 24px 60px rgba(0,0,0,.45);transform:translate(-50%,24px);opacity:0;pointer-events:none;transition:transform .45s var(--ease-out),opacity .45s var(--ease-out)}
+.toast.on{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+.toast small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--petrol);margin-bottom:6px}
+.toast p{font-size:14px;color:var(--muted-dark)}
+.toast q{display:block;margin-top:10px;background:#dcf8c6;color:#1b2024;padding:10px 12px;border-radius:10px 10px 10px 2px;font-size:14px;quotes:none}
+.toast button{position:absolute;top:8px;right:8px;width:36px;height:36px;border-radius:50%;font-size:20px;color:var(--muted-dark)}
+
+/* revelar no scroll */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out);transition-delay:var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:360px){.brand b{font-size:17px}.brand small{font-size:10px;letter-spacing:.04em}.brand-mark{width:36px;height:36px;font-size:16px}.concept-bar{font-size:11.5px}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv,.fade,.hero h1 .ln>span,.portrait .person img{opacity:1!important;transform:none!important}
+  .img-rv{clip-path:none!important}
+  .portrait *{translate:none!important}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Physician","name":"Dr. Rafael Moretti (projeto conceito)","medicalSpecialty":"Orthopedic","description":"Projeto conceito da Creative Romão. Médico e dados fictícios.","address":{"@type":"PostalAddress","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="concept-bar">Projeto conceito da <a href="https://www.instagram.com/creative.romao/" target="_blank" rel="noopener">Creative Romão</a> · médico e dados fictícios</div>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#inicio" class="brand" aria-label="Dr. Rafael Moretti, início">
+      <span class="brand-mark">RM</span>
+      <span><b>Dr. Rafael Moretti</b><small>Ortopedia · Joelho e Esporte</small></span>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#joelho">O joelho</a><a href="#onde-doi">Onde dói?</a><a href="#tratamentos">Tratamentos</a><a href="#sobre">Sobre</a><a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a href="#" class="btn btn-wa" data-wa="geral" aria-label="Agendar pelo WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+      <span>Agendar</span>
+    </a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow fade d1">Ortopedista · Rio de Janeiro/RJ</p>
+      <h1 style="margin-top:18px">
+        <span class="ln"><span>Volte a se</span></span>
+        <span class="ln"><span>mover <span class="hl">sem medo</span></span></span>
+        <span class="ln"><span>da dor.</span></span>
+      </h1>
+      <p class="lead fade d2">Especialista em joelho e medicina esportiva. Diagnóstico claro, tratamento sem pressa para operar e um plano para você voltar ao que gosta de fazer.</p>
+      <div class="hero-ctas fade d3">
+        <a href="#" class="btn btn-wa" data-wa="geral">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          Quero agendar uma avaliação
+        </a>
+        <a href="#onde-doi" class="btn btn-ghost">Onde está sua dor?</a>
+      </div>
+      <div class="hero-meta fade d3">
+        <span><i></i>CRM-RJ 00000 · RQE 00000</span>
+        <span><i></i>Consultório e atendimento a atletas</span>
+      </div>
+    </div>
+
+    <div class="portrait" id="portrait" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="frame"></div>
+      <div class="person">
+        <img src="assets/dr-rafael-moretti-ortopedista.webp" alt="Dr. Rafael Moretti, ortopedista especialista em joelho, de jaleco e braços cruzados" width="820" height="1093" fetchpriority="high">
+      </div>
+      <div class="shade"></div>
+      <div class="tag"><b>Joelho &amp; esporte</b>Do diagnóstico ao retorno</div>
+    </div>
+  </div>
+</section>
+
+<!-- JOELHO QUE SE MONTA -->
+<section class="knee" id="joelho" aria-label="Como funciona o joelho">
+  <div class="knee-sticky">
+    <div class="wrap knee-grid">
+      <div class="knee-copy">
+        <p class="eyebrow">Entenda seu joelho</p>
+        <h2>Peça por peça, <span class="hl">sem mistério.</span></h2>
+        <div class="stages" aria-live="polite">
+          <div class="stage on" data-s="0"><b>Fêmur</b><p>O maior osso do corpo. Na ponta, dois côndilos arredondados deslizam sobre a tíbia a cada passo.</p></div>
+          <div class="stage" data-s="1"><b>Tíbia e fíbula</b><p>A base que recebe o seu peso. É nela que o joelho se apoia para caminhar, correr e saltar.</p></div>
+          <div class="stage" data-s="2"><b>Patela</b><p>A rótula funciona como uma alavanca: aumenta a força da coxa na hora de esticar a perna.</p></div>
+          <div class="stage" data-s="3"><b>Meniscos</b><p>Dois amortecedores em forma de meia-lua. Torções no esporte estão entre as causas mais comuns de lesão.</p></div>
+          <div class="stage" data-s="4"><b>Ligamentos</b><p>Seguram o joelho nas mudanças de direção. Quando o LCA rompe, a sensação é de joelho "falseando".</p></div>
+        </div>
+        <div class="knee-progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <svg class="knee-svg" viewBox="0 0 400 600" role="img" aria-label="Desenho do joelho com fêmur, tíbia, patela, meniscos e ligamentos">
+        <path class="bone d" data-g="0" pathLength="1" d="M170 20 L172 200 C160 230 120 245 118 280 C116 310 150 322 180 312 C190 308 196 300 200 296 C204 300 210 308 220 312 C250 322 284 310 282 280 C280 245 240 230 228 200 L230 20"/>
+        <path class="bone d" data-g="1" pathLength="1" d="M164 580 L164 388 C150 375 122 366 124 346 C126 334 150 330 200 331 C250 330 276 334 278 346 C280 366 250 375 236 388 L236 580"/>
+        <path class="bone d" data-g="1" pathLength="1" d="M276 580 L280 402 C279 386 300 384 298 402 L292 580"/>
+        <path class="bone d" data-g="2" pathLength="1" d="M200 206 C228 206 238 232 236 254 C234 278 218 294 200 294 C182 294 166 278 164 254 C162 232 172 206 200 206 Z" style="stroke-dasharray:1;"/>
+        <path class="soft d" data-g="3" pathLength="1" d="M128 340 C140 322 182 318 194 331 C178 329 150 331 136 343 Z"/>
+        <path class="soft d" data-g="3" pathLength="1" d="M206 331 C220 318 262 322 272 340 C258 331 228 329 206 331 Z"/>
+        <path class="lig d" data-g="4" pathLength="1" d="M190 302 L214 334"/>
+        <path class="lig d" data-g="4" pathLength="1" d="M212 300 L188 334"/>
+        <path class="lig d" data-g="4" pathLength="1" d="M119 292 L126 352"/>
+        <path class="lig d" data-g="4" pathLength="1" d="M281 292 L277 352"/>
+        <g class="lbl" data-l="0"><circle cx="230" cy="120" r="4"/><line x1="234" y1="120" x2="300" y2="120"/><text x="306" y="125">Fêmur</text></g>
+        <g class="lbl" data-l="1"><circle cx="164" cy="470" r="4"/><line x1="160" y1="470" x2="92" y2="470"/><text x="30" y="475">Tíbia</text></g>
+        <g class="lbl" data-l="2"><circle cx="236" cy="240" r="4"/><line x1="240" y1="240" x2="300" y2="214"/><text x="306" y="216">Patela</text></g>
+        <g class="lbl" data-l="3"><circle cx="134" cy="338" r="4"/><line x1="130" y1="338" x2="70" y2="318"/><text x="0" y="312">Meniscos</text></g>
+        <g class="lbl" data-l="4"><circle cx="202" cy="318" r="4"/><line x1="206" y1="320" x2="318" y2="380"/><text x="322" y="386">LCA</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA DO CORPO -->
+<section class="light pad" id="onde-doi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Onde dói?</p><h2 class="rv">Toque onde <span class="hl">incomoda.</span></h2></div>
+      <p class="lead rv">Veja o que costuma causar dor em cada região e fale direto com o consultório sobre o seu caso. Isso é informação geral, não substitui a consulta.</p>
+    </div>
+    <div class="map-grid">
+      <div class="rv">
+        <div class="body-wrap" id="bodyWrap">
+          <svg class="body-svg" viewBox="0 0 200 440" aria-hidden="true">
+            <g class="sil">
+              <path d="M100 234 C102.0 234.0 104.7 264.0 106 280 C107.3 296.0 107.3 314.7 108 330 C108.7 345.3 110.0 358.3 110 372 C110.0 385.7 108.7 402.3 108 412 C107.3 421.7 102.7 426.7 106 430 C109.3 433.3 125.0 434.3 128 432 C131.0 429.7 123.3 426.0 124 416 C124.7 406.0 130.7 386.3 132 372 C133.3 357.7 131.0 347.0 132 330 C133.0 313.0 137.0 288.7 138 270 C139.0 251.3 139.3 233.0 138 218 C136.7 203.0 130.0 196.0 130 180 C130.0 164.0 135.3 126.7 138 122 C140.7 117.3 143.7 138.0 146 152 C148.3 166.0 150.3 190.7 152 206 C153.7 221.3 154.0 236.7 156 244 C158.0 251.3 161.7 251.3 164 250 C166.3 248.7 169.7 243.0 170 236 C170.3 229.0 167.7 222.0 166 208 C164.3 194.0 162.0 170.7 160 152 C158.0 133.3 157.3 108.0 154 96 C150.7 84.0 147.0 84.3 140 80 C133.0 75.7 117.0 74.0 112 70 C107.0 66.0 114.0 56.0 110 56 C106.0 56.0 96.3 66.0 88 70 C79.7 74.0 67.0 75.7 60 80 C53.0 84.3 49.3 84.0 46 96 C42.7 108.0 42.0 133.3 40 152 C38.0 170.7 35.7 194.0 34 208 C32.3 222.0 29.7 229.0 30 236 C30.3 243.0 33.7 248.7 36 250 C38.3 251.3 42.0 251.3 44 244 C46.0 236.7 46.3 221.3 48 206 C49.7 190.7 51.7 166.0 54 152 C56.3 138.0 59.3 117.3 62 122 C64.7 126.7 70.0 164.0 70 180 C70.0 196.0 63.3 203.0 62 218 C60.7 233.0 61.0 251.3 62 270 C63.0 288.7 67.0 313.0 68 330 C69.0 347.0 66.7 357.7 68 372 C69.3 386.3 75.3 406.0 76 416 C76.7 426.0 69.0 429.7 72 432 C75.0 434.3 90.7 433.3 94 430 C97.3 426.7 92.7 421.7 92 412 C91.3 402.3 90.0 385.7 90 372 C90.0 358.3 91.3 345.3 92 330 C92.7 314.7 92.7 296.0 94 280 C95.3 264.0 98.0 234.0 100 234Z"/>
+              <circle cx="100" cy="34" r="22"/>
+            </g>
+            <g class="sil-lines" aria-hidden="true"><path d="M86 120 C92 132 108 132 114 120"/><path d="M100 140 V196"/><path d="M78 226 C90 238 110 238 122 226"/></g>
+          </svg>
+          <button class="spot" data-area="ombro" style="left:74%;top:21%" aria-label="Ombro"><span class="pulse"></span></button>
+          <button class="spot" data-area="quadril" style="left:33%;top:50%" aria-label="Quadril"><span class="pulse"></span></button>
+          <button class="spot on" data-area="joelho" style="left:60.5%;top:75%" aria-label="Joelho"><span class="pulse"></span></button>
+          <button class="spot" data-area="tornozelo" style="left:41.5%;top:94.5%" aria-label="Tornozelo e pé"><span class="pulse"></span></button>
+        </div>
+        <p class="map-hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11V6a2 2 0 1 1 4 0v5m0-1a2 2 0 1 1 4 0v3a6 6 0 0 1-6 6H10a5 5 0 0 1-4-2l-3-4a1.5 1.5 0 0 1 2.3-2L7 16V8a2 2 0 1 1 4 0"/></svg>Toque nos pontos do corpo</p>
+      </div>
+      <div class="panel rv" style="--d:120ms">
+        <div class="panel-tabs" role="tablist" aria-label="Regiões">
+          <button role="tab" data-area="ombro" aria-selected="false">Ombro</button>
+          <button role="tab" data-area="quadril" aria-selected="false">Quadril</button>
+          <button role="tab" data-area="joelho" aria-selected="true">Joelho</button>
+          <button role="tab" data-area="tornozelo" aria-selected="false">Tornozelo e pé</button>
+        </div>
+        <div class="panel-body" id="panelBody" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINHA DO TEMPO -->
+<section class="pad" id="recuperacao">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Do primeiro passo ao retorno</p><h2 class="rv">Um plano com <span class="hl">começo, meio e volta.</span></h2><p class="lead rv" style="margin-top:24px">Você sabe em que etapa está, o que vem depois e o que precisa fazer em cada uma. Sem consulta corrida, sem dúvida no caminho de casa.</p></div>
+      <figure class="tl-photo img-rv">
+        <img src="assets/dr-rafael-explicando-joelho.webp" alt="Dr. Rafael Moretti explicando a anatomia do joelho em um modelo no consultório" width="1000" height="1094" loading="lazy">
+        <figcaption>Cada exame explicado com você, peça por peça.</figcaption>
+      </figure>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="tl-track"><i></i></div>
+      <div class="tl-step"><span class="tl-dot">1</span><h3>Escuta</h3><p>Como a dor começou, o que piora, qual esporte ou rotina você quer retomar.</p></div>
+      <div class="tl-step"><span class="tl-dot">2</span><h3>Diagnóstico</h3><p>Exame físico detalhado e, quando necessário, exames de imagem explicados na tela com você.</p></div>
+      <div class="tl-step"><span class="tl-dot">3</span><h3>Tratamento</h3><p>Fisioterapia, fortalecimento, infiltração ou cirurgia, só quando ela realmente for o melhor caminho.</p></div>
+      <div class="tl-step"><span class="tl-dot">4</span><h3>Volta ao esporte</h3><p>Critérios claros de força e estabilidade antes de liberar. Voltar bem é tão importante quanto voltar logo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRATAMENTOS -->
+<section class="light pad" id="tratamentos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow rv">Tratamentos</p><h2 class="rv">O que eu <span class="hl">trato.</span></h2></div>
+      <p class="lead rv">Cada item abre uma conversa no WhatsApp já com o assunto, para o atendimento ser mais rápido.</p>
+    </div>
+    <div class="treat">
+      <div class="t-row rv"><h3>Lesão de menisco</h3><p>Dor na lateral do joelho, estalos ou travamento após torção.</p><a href="#" class="t-link" data-wa="menisco" aria-label="Falar sobre lesão de menisco"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+      <div class="t-row rv"><h3>Lesão do LCA</h3><p>Joelho que "falseia" após mudança brusca de direção ou queda.</p><a href="#" class="t-link" data-wa="lca" aria-label="Falar sobre lesão do LCA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+      <div class="t-row rv"><h3>Artrose do joelho</h3><p>Dor ao subir escadas e rigidez ao levantar. Tratamento para manter você ativo.</p><a href="#" class="t-link" data-wa="artrose" aria-label="Falar sobre artrose do joelho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+      <div class="t-row rv"><h3>Dor na frente do joelho</h3><p>Comum em corredores e em quem passa muito tempo sentado.</p><a href="#" class="t-link" data-wa="patelar" aria-label="Falar sobre dor na frente do joelho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+      <div class="t-row rv"><h3>Lesões no esporte</h3><p>Entorses, tendinites e sobrecarga em atletas amadores e profissionais.</p><a href="#" class="t-link" data-wa="esporte" aria-label="Falar sobre lesões no esporte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+      <div class="t-row rv"><h3>Infiltrações</h3><p>Procedimentos no consultório para aliviar a dor e acelerar a reabilitação.</p><a href="#" class="t-link" data-wa="infiltracao" aria-label="Falar sobre infiltrações"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- MITO -->
+<section class="myth pad">
+  <div class="wrap myth-grid">
+    <div><span class="label rv">Mito comum</span><h2 class="rv"><s>"Com artrose, tem que parar de se exercitar."</s></h2></div>
+    <div>
+      <p class="rv">Na maioria dos casos, é o contrário. O exercício orientado fortalece a musculatura que protege a articulação e costuma reduzir a dor com o tempo.</p>
+      <p class="rv" style="--d:80ms">Parar de vez, sem orientação, tende a enfraquecer a perna e piorar o quadro. O segredo é o tipo certo de exercício, na dose certa para você.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="light pad" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-photo img-rv">
+      <img src="assets/dr-rafael-consultorio.webp" alt="Dr. Rafael Moretti sorrindo em sua mesa no consultório de ortopedia" width="1000" height="1094" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow rv">Sobre</p>
+      <h2 class="rv" style="margin-top:16px">Dr. Rafael <span class="hl">Moretti</span></h2>
+      <p class="quote rv">Tirar a dor é o começo. O objetivo é devolver o movimento que você gosta de fazer.</p>
+      <p class="rv" style="color:var(--muted-dark)">Ortopedista dedicado ao joelho e à medicina esportiva. Atende desde quem quer voltar a caminhar sem dor até atletas que precisam retornar às competições, sempre explicando cada etapa com calma.</p>
+      <ul class="creds rv">
+        <li>Formação em Ortopedia e Traumatologia</li>
+        <li>Especialização em Cirurgia do Joelho e Medicina Esportiva</li>
+        <li>Atendimento particular, com recibo para reembolso</li>
+      </ul>
+      <span class="reg rv">CRM-RJ 00000 · RQE 00000</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="pad" id="duvidas">
+  <div class="wrap">
+    <div class="sec-head" style="grid-template-columns:1fr"><div><p class="eyebrow rv">Dúvidas</p><h2 class="rv">Antes de <span class="hl">agendar.</span></h2></div></div>
+    <div class="faq">
+      <details class="rv"><summary>Preciso de pedido médico para a consulta?</summary><p class="ans">Não. Você pode agendar direto pelo WhatsApp. Se já tiver exames, leve no dia: eles ajudam a ganhar tempo.</p></details>
+      <details class="rv"><summary>Toda lesão no joelho precisa de cirurgia?</summary><p class="ans">Não. Grande parte dos casos melhora com fisioterapia, fortalecimento e ajustes na rotina. A cirurgia é indicada quando ela é realmente o melhor caminho para o seu caso.</p></details>
+      <details class="rv"><summary>Quanto tempo leva para voltar ao esporte?</summary><p class="ans">Depende da lesão e do esporte. O retorno é liberado por critérios de força e estabilidade, não só pelo calendário. Na consulta você recebe uma estimativa para o seu caso.</p></details>
+      <details class="rv"><summary>Atende convênio?</summary><p class="ans">O atendimento é particular, com recibo para você pedir reembolso ao seu plano de saúde.</p></details>
+      <details class="rv"><summary>Atende atletas amadores?</summary><p class="ans">Sim. Corredores de fim de semana, praticantes de futebol, beach tennis, crossfit e academia são boa parte dos pacientes.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="pad final">
+  <div class="wrap">
+    <p class="eyebrow rv" style="justify-content:center">Agende sua avaliação</p>
+    <h2 class="rv">Seu joelho não precisa <span class="hl">te parar.</span></h2>
+    <p class="lead rv">Mande uma mensagem e a equipe encontra o melhor horário para você.</p>
+    <div class="hero-ctas rv"><a href="#" class="btn btn-wa" data-wa="geral"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Chamar no WhatsApp</a></div>
+    <div class="final-info rv"><span>Rio de Janeiro/RJ</span><span>Seg a sex · 8h às 18h</span><span>Atendimento particular</span></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="concept-note">Projeto conceito: Dr. Rafael Moretti, registros e contatos são fictícios. Conteúdo informativo; não substitui a consulta.</p>
+    <p>Site desenvolvido por <a href="https://www.instagram.com/creative.romao/" target="_blank" rel="noopener">Creative Romão</a></p>
+  </div>
+</footer>
+
+<a href="#" class="fab" id="fab" data-wa="geral" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg></a>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <button type="button" id="toastClose" aria-label="Fechar">×</button>
+  <small>Projeto conceito</small>
+  <p>No site real, este botão abre o WhatsApp do consultório já com a mensagem:</p>
+  <q id="toastMsg"></q>
+</div>
+
+<script>
+(()=>{
+  /* ===== WhatsApp: número em um só lugar, mensagem por assunto ===== */
+  const CONCEITO = true;            // projeto conceito: mostra a mensagem em vez de abrir o WhatsApp
+  const WA_NUMERO = '5521900000000'; // fictício
+  const MSG = {
+    geral:'Olá! Vim pelo site e gostaria de agendar uma avaliação com o Dr. Rafael.',
+    joelho:'Olá! Vim pelo site e gostaria de agendar uma avaliação para dor no joelho.',
+    ombro:'Olá! Vim pelo site e gostaria de agendar uma avaliação para dor no ombro.',
+    quadril:'Olá! Vim pelo site e gostaria de agendar uma avaliação para dor no quadril.',
+    tornozelo:'Olá! Vim pelo site e gostaria de agendar uma avaliação para dor no tornozelo ou no pé.',
+    menisco:'Olá! Vim pelo site e queria uma avaliação para uma possível lesão de menisco.',
+    lca:'Olá! Vim pelo site e queria uma avaliação para uma possível lesão de ligamento no joelho.',
+    artrose:'Olá! Vim pelo site e gostaria de saber sobre o tratamento de artrose no joelho.',
+    patelar:'Olá! Vim pelo site e queria uma avaliação para dor na frente do joelho.',
+    esporte:'Olá! Vim pelo site e queria uma avaliação para uma lesão no esporte.',
+    infiltracao:'Olá! Vim pelo site e gostaria de saber mais sobre infiltração.'
+  };
+  const toast=document.getElementById('toast'),toastMsg=document.getElementById('toastMsg');
+  let tt;
+  function showToast(t){toastMsg.textContent=t;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('on'),6000)}
+  document.getElementById('toastClose').addEventListener('click',()=>toast.classList.remove('on'));
+  function linkWA(k){return 'https://wa.me/'+WA_NUMERO+'?text='+encodeURIComponent(MSG[k]||MSG.geral)}
+  function prepWA(el){
+    const k=el.dataset.wa; el.href=linkWA(k);
+    if(!CONCEITO){el.target='_blank';el.rel='noopener'}
+  }
+  document.querySelectorAll('[data-wa]').forEach(prepWA);
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('[data-wa]'); if(!a||!CONCEITO) return;
+    e.preventDefault(); showToast(MSG[a.dataset.wa]||MSG.geral);
+  });
+
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ===== Abertura ===== */
+  requestAnimationFrame(()=>document.querySelector('.hero').classList.add('on'));
+
+  /* ===== Revelar no scroll (cascata por lote) ===== */
+  const io=new IntersectionObserver(entries=>{
+    let i=0;
+    entries.filter(e=>e.isIntersecting).forEach(e=>{
+      if(!e.target.style.getPropertyValue('--d')) e.target.style.setProperty('--d',(i++*70)+'ms');
+      e.target.classList.add('in'); io.unobserve(e.target);
+    });
+  },{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv,.img-rv').forEach(el=>io.observe(el));
+
+  /* ===== Joelho que se monta ===== */
+  const knee=document.getElementById('joelho');
+  const groups=[0,1,2,3,4].map(g=>[...knee.querySelectorAll('.d[data-g="'+g+'"]')]);
+  const labels=[...knee.querySelectorAll('.lbl')];
+  const stages=[...knee.querySelectorAll('.stage')];
+  const bars=[...knee.querySelectorAll('.knee-progress i')];
+  knee.querySelectorAll('.d').forEach(p=>{p.style.strokeDasharray='1';p.style.strokeDashoffset='1'});
+  let lastStage=-1;
+  function kneeUpdate(){
+    const r=knee.getBoundingClientRect();
+    const total=r.height-innerHeight;
+    let p=reduce?1:Math.min(1,Math.max(0,(-r.top)/(total*0.9)));
+    const seg=p*5;
+    groups.forEach((g,i)=>{
+      const local=Math.min(1,Math.max(0,seg-i));
+      g.forEach(path=>path.style.strokeDashoffset=String(1-local));
+      labels[i].classList.toggle('on',local>.6);
+      bars[i].style.setProperty('--p',local.toFixed(3));
+    });
+    const s=Math.min(4,Math.floor(seg));
+    if(s!==lastStage){stages.forEach((el,i)=>el.classList.toggle('on',i===s));lastStage=s}
+  }
+
+  /* ===== Linha do tempo ===== */
+  const tl=document.getElementById('timeline'),steps=[...tl.querySelectorAll('.tl-step')];
+  function tlUpdate(){
+    const r=tl.getBoundingClientRect();
+    const start=innerHeight*.8,end=innerHeight*.35;
+    let p=reduce?1:Math.min(1,Math.max(0,(start-r.top)/(r.height+start-end)));
+    tl.style.setProperty('--tl',p.toFixed(3));
+    steps.forEach((s,i)=>s.classList.toggle('on',p>=i/steps.length+.02||p===1));
+  }
+
+  /* ===== Foto com profundidade ===== */
+  const portrait=document.getElementById('portrait');
+  let mx=0,my=0;
+  function depth(){
+    if(reduce) return;
+    const y=Math.min(scrollY,700);
+    portrait.style.setProperty('--py-bg',(y*.18+my*10)+'px');
+    portrait.style.setProperty('--py-glow',(y*.1)+'px');
+    portrait.style.setProperty('--py-frame',(y*.05)+'px');
+    portrait.style.setProperty('--py-person',(y*-.02+my*-4)+'px');
+    portrait.style.setProperty('--py-tag',(y*-.12)+'px');
+  }
+  if(matchMedia('(hover: hover) and (pointer: fine)').matches){
+    addEventListener('mousemove',e=>{my=(e.clientY/innerHeight-.5);ticking||(ticking=requestAnimationFrame(frame))},{passive:true});
+  }
+
+  /* ===== Botão flutuante: esconde quando outro botão de WhatsApp está na tela ===== */
+  const fab=document.getElementById('fab');
+  const others=[...document.querySelectorAll('.hero .btn-wa, .final .btn-wa, .panel')];
+  const vis=new Set();
+  const fo=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));fab.classList.toggle('hide',vis.size>0)});
+  others.forEach(o=>fo.observe(o));
+
+  let ticking=0;
+  function frame(){ticking=0;kneeUpdate();tlUpdate();depth()}
+  addEventListener('scroll',()=>{ticking||(ticking=requestAnimationFrame(frame))},{passive:true});
+  addEventListener('resize',frame);
+  frame();
+
+  /* ===== Mapa do corpo ===== */
+  const AREAS={
+    joelho:{t:'Joelho',p:'A articulação que mais sofre no esporte e com o passar dos anos. Dor ao subir escadas, inchaço, estalos ou sensação de falseio merecem avaliação.',c:['Menisco','LCA','Artrose','Dor patelar']},
+    ombro:{t:'Ombro',p:'Dor ao levantar o braço, ao dormir de lado ou ao treinar costuma estar ligada aos tendões do manguito rotador ou a instabilidade.',c:['Tendinite','Bursite','Instabilidade','Lesão no treino']},
+    quadril:{t:'Quadril',p:'Dor na virilha ou na lateral da coxa, que piora ao caminhar ou ao sentar por muito tempo, pode vir da articulação ou dos tendões ao redor.',c:['Bursite','Sobrecarga','Desgaste','Dor na corrida']},
+    tornozelo:{t:'Tornozelo e pé',p:'Entorses que se repetem, dor no calcanhar ao acordar ou depois da corrida são queixas comuns e têm tratamento.',c:['Entorse','Instabilidade','Fascite plantar','Tendão de Aquiles']}
+  };
+  const body=document.getElementById('panelBody');
+  const tabs=[...document.querySelectorAll('.panel-tabs button')];
+  const spots=[...document.querySelectorAll('.spot')];
+  function setArea(k,anim){
+    const a=AREAS[k];
+    body.innerHTML='<h3>'+a.t+'</h3><p>'+a.p+'</p><div class="chips">'+a.c.map(x=>'<span>'+x+'</span>').join('')+'</div>'+
+      '<a href="#" class="btn btn-wa" data-wa="'+k+'"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Falar sobre dor no '+a.t.toLowerCase().replace('tornozelo e pé','tornozelo ou pé')+'</a>';
+    prepWA(body.querySelector('[data-wa]'));
+    tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.area===k));
+    spots.forEach(s=>s.classList.toggle('on',s.dataset.area===k));
+    if(anim){body.classList.remove('swap');void body.offsetWidth;body.classList.add('swap')}
+  }
+  [...tabs,...spots].forEach(b=>b.addEventListener('click',()=>{
+    setArea(b.dataset.area,true);
+    if(b.classList.contains('spot')&&innerWidth<860) body.closest('.panel').scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});
+  }));
+  setArea('joelho',false);
+})();
+</script>
+</body>
+</html>
